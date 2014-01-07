@@ -1,0 +1,5 @@
+The method that I followed to resolve this issue without a firewall  to protect my router from the wan,
+It was a simple port forwarding to an existing IP address, In my case I assigned manually address to my devices
+disabling DHCP, I told to my router to forward all incoming taffic From WAN reaching port 32764 (TCP,UDP, 2 forward rules)
+to an unassigned (never use that IP) IP address. After that if you run the program the port is not open, and with poc.py is not vulnerable, 
+it doesnt respond anymore from the WAN.
